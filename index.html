@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -19,12 +20,12 @@
             <a href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><img src="images/search.svg" width="20" height="20" alt="Поиск."></a>
+            <a class="navigation-link" href="#">Поиск</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><img src="images/heart.svg" width="20" height="20" alt="В избранном."></a>
+            <a class="navigation-link" href="#">В избранном</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link-button" href="#">Хочу сюда!</a>
@@ -40,29 +41,30 @@
       <section class="advantages">
         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        <ul>
+        <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title-article">Настоящий городок</h3>
             <p class="advantages-description-article">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="advantages-img" src="images/city.jpg" width="800" height="385" alt="Флаги на фоек домов.">
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title-article">Небольшая площадь</h3>
+            <h3 class="advantages-title">Небольшая площадь</h3>
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Красивая дорога</h3>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li>
+          <li class="advantages-item">
             <h3 class="advantages-title">Мало туристов</h3>
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           <li class="advantages-item">
             <h3 class="advantages-title-article">Там есть мост дьявола</h3>
-            <p class="blog-article-description-article">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <p class="advantages-description-article">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img class="advantages-img" src="images/canyon.jpg" width="800" height="385" alt="Каньон.">
           </li>
         </ul>
+      </section>
       <section class="services">
         <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p>Опытный персонал и качественное обслуживание!</p>
@@ -95,9 +97,7 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">Email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden">Подписаться</span>
-          </button>
+          <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -106,20 +106,20 @@
         <h2 class="visually-hidden">Социаные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#"><img src="images/VK.png" width="24" height="14" alt="VK"></a>
+            <a class="footer-social-item-vk" href="#">VK</a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#"><img src="images/telegram.png" width="18" height="15,1" alt="Telegram"></a>
+            <a class="footer-social-item-telegram" href="#">Telegram</a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#"><img src="images/youtube.svg" width="22" height="17" alt="Youtube"></a>
+            <a class="footer-social-item-youtube" href="#">Youtube</a>
           </li>
         </ul>
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="link" href="#"><img src="images/HTML Academy.svg" width="114,9" height="32,9" alt="HTML Academy"></a>
+        <a class="link" href="#"><img src="images/html_academy.svg" width="114,9" height="32,9" alt="HTML Academy"></a>
       </section>
     </footer>
   </body>
