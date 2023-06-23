@@ -25,12 +25,16 @@
           </ul>
           <ul class="navigation-list">
             <li class="navigation-list-item">
-              <a class="navigation-list-item-surch" href="#">Поиск</a>
+              <a class="navigation-list-surch" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
             </li>
             <li class="navigation-list-item">
-              <a class="navigation-list-item-favorites" href="#">В избранном</a>
+              <a class="navigation-listfavorites" href="#">
+                <span class="visually-hidden">В избранном</span>
+              </a>
             </li>
-            <li class="navigation-list-item">
+            <li>
               <a class="button button-navigation-link" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -42,7 +46,9 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">Главная</a>
+                <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
+                  <span class="visually-hidden">Главная</span>
+                </a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -102,8 +108,10 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button button-apply" type="submit">Применить</button>
-            <button class="button button-reset" type="reset">Сбросить</button>
+            <div class="filter-button-conteiner">
+              <button class="button button-apply" type="submit">Применить</button>
+              <button class="button button-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
         <section class="catalog-products">
@@ -115,9 +123,15 @@
               <option value="expensive">Сначала дорогое</option>
             </select>
             <div class="card-view-button-conteiner">
-              <button class="card-view-button-grid" type="button">Показать сетку</button>
-              <button class="card-view-button-slides" type="button">Показать слайды</button>
-              <button class="card-view-button-list" type="button">Показать список</button>
+              <button class="card-view-button card-view-button-grid" type="button">
+                <span class="visually-hidden">Показать сетку</span>
+              </button>
+              <button class="card-view-button card-view-button-slides" type="button">
+                <span class="visually-hidden">Показать слайды</span>
+              </button>
+              <button class="card-view-button card-view-button-list" type="button">
+                <span class="visually-hidden">Показать список</span>
+              </button>
             </div>
           </div>
           <ul class="product-list">
@@ -131,8 +145,10 @@
                   <h3 class="product-card-title">Amara Resort & Spa</h3>
                 </a>
                 <p class="product-card-type">Гостиница <span>От 4000 ₽</span></p>
-                <a class="button product-card-more" href="#">Подробнее</a>
-                <button class="button button-product-card" type="button">В избранное</button>
+                <div class="product-card-button-conteiner">
+                  <a class="button product-card-more" href="#">Подробнее</a>
+                  <button class="button button-product-card" type="button">В избранное</button>
+                </div>
                 <p class="product-card-rating">4/5 <span>Рейтинг: 8,5</span></p>
               </div>
             </li>
@@ -146,8 +162,10 @@
                   <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 </a>
                 <p class="product-card-type">Гостиница <span>От 5000 ₽</span></p>
-                <a class="button product-card-more" href="#">Подробнее</a>
-                <button class="button button-product-card active" type="button">В избранном</button>
+                <div class="product-card-button-conteiner">
+                  <a class="button product-card-more" href="#">Подробнее</a>
+                  <button class="button button-product-card active" type="button">В избранном</button>
+                </div>
                 <p class="product-card-rating">4/5 <span>Рейтинг: 9,2</span></p>
               </div>
             </li>
@@ -161,8 +179,10 @@
                   <h3 class="product-card-title">Desert Quail Inn</h3>
                 </a>
                 <p class="product-card-type">Гостиница <span>От 2500 ₽</span></p>
-                <a class="button product-card-more" href="#">Подробнее</a>
-                <button class="button button-product-card" type="button">В избранное</button>
+                <div class="product-card-button-conteiner">
+                  <a class="button product-card-more" href="#">Подробнее</a>
+                  <button class="button button-product-card" type="button">В избранное</button>
+                </div>
                 <p class="product-card-rating">3/5 <span>Рейтинг: 6,9</span></p>
               </div>
             </li>
@@ -176,8 +196,10 @@
                   <h3 class="product-card-title">GreenTree Inn</h3>
                 </a>
                 <p class="product-card-type">Гостиница <span>От 1500 ₽</span></p>
-                <a class="button product-card-more" href="#">Подробнее</a>
-                <button class="button button-product-card" type="button">В избранное</button>
+                <div class="product-card-button-conteiner">
+                  <a class="button product-card-more" href="#">Подробнее</a>
+                  <button class="button button-product-card" type="button">В избранное</button>
+                </div>
                 <p class="product-card-rating">2/5 <span>Рейтинг: 5,0</span></p>
               </div>
             </li>
@@ -204,14 +226,18 @@
           </ul>
         </section>
         <section class="newsletter-catalog">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
-            <button class="button button-newsletter" type="submit">Подписаться</button>
-          </form>
+          <div class="newsletter-conteiner">
+            <h2>Подпишитесь на рассылку</h2>
+            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="newsletter-email">
+                <span class="visually-hidden">Ваш Email</span>
+              </label>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                required>
+              <button class="button button-newsletter" type="submit">Подписаться</button>
+            </form>
+          </div>
         </section>
       </main>
       <footer>
@@ -219,13 +245,19 @@
           <h2 class="visually-hidden">Социаные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="footer-social-item-vk" href="#">VK</a>
+              <a class="footer-social-item-vk" href="#">
+                <span class="visually-hidden">VK</span>
+              </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-item-telegram" href="#">Telegram</a>
+              <a class="footer-social-item-telegram" href="#">
+                <span class="visually-hidden">Telegram</span>
+              </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-item-youtube" href="#">Youtube</a>
+              <a class="footer-social-item-youtube" href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
             </li>
           </ul>
         </section>
