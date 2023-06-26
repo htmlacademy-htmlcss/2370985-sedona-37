@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <div class="page-conteiner">
+    <div class="page-container">
       <header class="page-header">
         <nav class="main-nav">
           <a class="logo" href=""><img src="images/logo.svg" width="140" height="70" alt="Логотип города SEDONA."></a>
@@ -108,7 +108,7 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="filter-button-conteiner">
+            <div class="filter-button-container">
               <button class="button button-apply" type="submit">Применить</button>
               <button class="button button-reset" type="reset">Сбросить</button>
             </div>
@@ -122,7 +122,7 @@
               <option selected value="cheap">Сначала дешёвое</option>
               <option value="expensive">Сначала дорогое</option>
             </select>
-            <div class="card-view-button-conteiner">
+            <div class="card-view-button-container">
               <button class="card-view-button card-view-button-grid" type="button">
                 <span class="visually-hidden">Показать сетку</span>
               </button>
@@ -136,72 +136,76 @@
           </div>
           <ul class="product-list">
             <li class="product-card">
-              <div class="product-card-conteiner">
-                <a class="product-card-img" href="#">
-                  <img class="product-card-image" src="images/amara_resort.jpg" width="300" height="212"
-                    alt="Amara Resort & Spa">
-                </a>
-                <a class="product-card-link" href="#">
-                  <h3 class="product-card-title">Amara Resort & Spa</h3>
-                </a>
-                <p class="product-card-type">Гостиница <span>От 4000 ₽</span></p>
-                <div class="product-card-button-conteiner">
-                  <a class="button product-card-more" href="#">Подробнее</a>
-                  <button class="button button-product-card" type="button">В избранное</button>
-                </div>
-                <p class="product-card-rating">4/5 <span>Рейтинг: 8,5</span></p>
+              <a class="product-card-img" href="#">
+                <img class="product-card-image" src="images/amara_resort.jpg" width="300" height="212"
+                  alt="Amara Resort & Spa">
+              </a>
+              <a class="product-card-link" href="#">
+                <h3 class="product-card-title">Amara Resort & Spa</h3>
+              </a>
+              <div class="product-card-type-container">
+                <p class="product-card-type">Гостиница</p>
+                <p class="product-card-price">От 4000 ₽</p>
               </div>
+              <div class="product-card-button-container">
+                <a class="button product-card-more" href="#">Подробнее</a>
+                <button class="button button-product-card" type="button">В избранное</button>
+              </div>
+              <p class="product-card-rating">4/5 <span>Рейтинг: 8,5</span></p>
             </li>
             <li class="product-card">
-              <div class="product-card-conteiner">
-                <a class="product-card-img" href="#">
-                  <img class="product-card-image" src="images/villas.jpg" width="300" height="212"
-                    alt="Villas at Poco Diablo.">
-                </a>
-                <a class="product-card-link" href="#">
-                  <h3 class="product-card-title">Villas at Poco Diablo</h3>
-                </a>
-                <p class="product-card-type">Гостиница <span>От 5000 ₽</span></p>
-                <div class="product-card-button-conteiner">
-                  <a class="button product-card-more" href="#">Подробнее</a>
-                  <button class="button button-product-card active" type="button">В избранном</button>
-                </div>
-                <p class="product-card-rating">4/5 <span>Рейтинг: 9,2</span></p>
+              <a class="product-card-img" href="#">
+                <img class="product-card-image" src="images/villas.jpg" width="300" height="212"
+                  alt="Villas at Poco Diablo.">
+              </a>
+              <a class="product-card-link" href="#">
+                <h3 class="product-card-title">Villas at Poco Diablo</h3>
+              </a>
+              <div class="product-card-type-container">
+                <p class="product-card-type">Гостиница</p>
+                <p class="product-card-price">От 5000 ₽</p>
               </div>
+              <div class="product-card-button-container">
+                <a class="button product-card-more" href="#">Подробнее</a>
+                <button class="button button-product-card active" type="button">В избранном</button>
+              </div>
+              <p class="product-card-rating">4/5 <span>Рейтинг: 9,2</span></p>
             </li>
             <li class="product-card">
-              <div class="product-card-conteiner">
-                <a class="product-card-img" href="#">
-                  <img class="product-card-image" src="images/desert.jpg" width="300" height="212"
-                    alt="Desert Quail Inn.">
-                </a>
-                <a class="product-card-link" href="#">
-                  <h3 class="product-card-title">Desert Quail Inn</h3>
-                </a>
-                <p class="product-card-type">Гостиница <span>От 2500 ₽</span></p>
-                <div class="product-card-button-conteiner">
-                  <a class="button product-card-more" href="#">Подробнее</a>
-                  <button class="button button-product-card" type="button">В избранное</button>
-                </div>
-                <p class="product-card-rating">3/5 <span>Рейтинг: 6,9</span></p>
+              <a class="product-card-img" href="#">
+                <img class="product-card-image" src="images/desert.jpg" width="300" height="212"
+                  alt="Desert Quail Inn.">
+              </a>
+              <a class="product-card-link" href="#">
+                <h3 class="product-card-title">Desert Quail Inn</h3>
+              </a>
+              <div class="product-card-type-container">
+                <p class="product-card-type">Гостиница</p>
+                <p class="product-card-price">От 2500 ₽</p>
               </div>
+              <div class="product-card-button-container">
+                <a class="button product-card-more" href="#">Подробнее</a>
+                <button class="button button-product-card" type="button">В избранное</button>
+              </div>
+              <p class="product-card-rating">3/5 <span>Рейтинг: 6,9</span></p>
             </li>
             <li class="product-card">
-              <div class="product-card-conteiner">
-                <a class="product-card-img" href="#">
-                  <img class="product-card-image" src="images/greentree.jpg" width="300" height="212"
-                    alt="GreenTree Inn.">
-                </a>
-                <a class="product-card-link" href="#">
-                  <h3 class="product-card-title">GreenTree Inn</h3>
-                </a>
-                <p class="product-card-type">Гостиница <span>От 1500 ₽</span></p>
-                <div class="product-card-button-conteiner">
-                  <a class="button product-card-more" href="#">Подробнее</a>
-                  <button class="button button-product-card" type="button">В избранное</button>
-                </div>
-                <p class="product-card-rating">2/5 <span>Рейтинг: 5,0</span></p>
+              <a class="product-card-img" href="#">
+                <img class="product-card-image" src="images/greentree.jpg" width="300" height="212"
+                  alt="GreenTree Inn.">
+              </a>
+              <a class="product-card-link" href="#">
+                <h3 class="product-card-title">GreenTree Inn</h3>
+              </a>
+              <div class="product-card-type-container">
+                <p class="product-card-type">Гостиница</p>
+                <p class="product-card-price">От 1500 ₽</p>
               </div>
+              <div class="product-card-button-container">
+                <a class="button product-card-more" href="#">Подробнее</a>
+                <button class="button button-product-card" type="button">В избранное</button>
+              </div>
+              <p class="product-card-rating">2/5 <span>Рейтинг: 5,0</span></p>
             </li>
           </ul>
           <ul class="pagination">
@@ -226,12 +230,12 @@
           </ul>
         </section>
         <section class="newsletter-catalog">
-          <div class="newsletter-conteiner">
+          <div class="newsletter-container">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="newsletter-email">
-                <span class="visually-hidden">Ваш Email</span>
+                <span class="visually-hidden">Ваш e-mail</span>
               </label>
               <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                 required>
