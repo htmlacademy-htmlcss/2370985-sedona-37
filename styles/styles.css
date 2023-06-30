@@ -97,7 +97,7 @@ main {
 }
 
 .site-navigation-item a {
-  display: inline-block;
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -118,11 +118,22 @@ main {
   margin-left: auto;
 }
 
-.navigation-list-item {
-  display: grid;
-  min-width: 44px;
-  height: 64px;
-  align-items: center;
+.navigation-list-item a {
+  position: relative;
+  display: block;
+  padding: 32px 22px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
 }
 
 .button-navigation-link {
@@ -280,7 +291,8 @@ main {
 
 .services-item-container {
   width: 230px;
-  margin: auto;
+  min-height: 223px;
+  padding: 80px 85px;
 }
 
 .services-item:nth-child(2n+1) {
@@ -289,7 +301,7 @@ main {
 
 .services-title {
   margin: 0;
-  padding-top: 102px;
+  padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
@@ -335,9 +347,9 @@ main {
 }
 
 .newsletter {
-  background-color: #82B3D3;
   background: url("../images/canyon_blur.jpg");
-  background-size: 100% auto;
+  background-size: cover;
+  background-color: #82B3D3;
   background-repeat: no-repeat;
   min-height: 415px;
   text-align: center;
@@ -401,7 +413,7 @@ main {
 footer {
   display: flex;
   justify-content: space-between;
-  min-height: 50px;
+  height: 50px;
   margin-left: 70px;
   margin-right: 70px;
   padding-top: 40px;
@@ -411,20 +423,41 @@ footer {
 .footer-social-list {
   list-style: none;
   display: flex;
-  padding: 0;
+  justify-content: end;
+  align-items: center;
+  margin: 0;
+  padding: 5px 0;
+  margin-left: auto;
 }
 
-.footer-social-item {
-  width: 47px;
-  height: 40px;
+.footer-social-item a {
+  position: relative;
+  display: block;
+  padding: 20px 22px;
+}
+
+.footer-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3
 }
 
 .footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
+  padding: 5px 0;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.footer-link {
+  display: block;
+  padding: 8px 0;
 }
 
 .filter-products {
