@@ -72,56 +72,89 @@
           </header>
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
           <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter-group">
-              <legend class="filter-title">Инфраструктура</legend>
+            <fieldset class="filter-group filter-group-infrastructure">
+              <legend class="filter-title">Инфраструктура:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="infrastructure" value="pool">Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="pool"
+                      checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="infrastructure" value="parking">Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="parking"
+                      checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="infrastructure" value="Wi-Fi">Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="Wi-Fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-group">
-              <legend class="filter-title">Тип жилья</legend>
+            <fieldset class="filter-group filter-group-housing">
+              <legend class="filter-title">Тип Жилья:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="hotel">Гостиница
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="hotel"
+                      checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="motel" checked>Мотель
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="apartments">Апартаменты
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="apartments">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-group">
+            <fieldset class="filter-group filter-group-price">
               <legend class="filter-title">Стоимость, ₽:</legend>
               <ul class="filter-price">
                 <li class="filter-price-item">
-                  <input class="filter-price" placeholder="0 от" type="text" name="filter-price" required>
+                  <label class="catalog-filter-label">
+                    <input class="filter-price-input" type="number" value="0" name="min-price" required>
+                    <span class="filter-price-mark">от</span>
+                  </label>
                 </li>
                 <li class="filter-price-item">
-                  <input class="filter-price" placeholder="9000 до" type="text" name="filter-price" required>
+                  <label class="catalog-filter-label">
+                    <input class="filter-price-input filter-price-input-max" type="number" value="9000" name="max-price"
+                      required>
+                    <span class="filter-price-mark">до</span>
+                  </label>
                 </li>
               </ul>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 226px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
             </fieldset>
             <div class="filter-button-container">
               <button class="button button-apply" type="submit">Применить</button>
@@ -132,33 +165,21 @@
         <section class="catalog-products">
           <div class="catalog-products-header">
             <h2>Найдено гостиниц: 38</h2>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала популярное</option>
-              <option selected value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
-            </select>
+            <div class="select">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular">Сначала популярные</option>
+                <option selected value="cheap">Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+            </div>
             <div class="card-view-button-container">
-              <button class="card-view-button card-view-button-grid" type="button">
-                <svg class="card-view-button-icon" aria-hidden="true" focusable="false" width="16" height="14"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
-                </svg>
+              <button class="card-view-button card-view-button-grid card-view-button-active" type="button">
                 <span class="visually-hidden">Показать сетку</span>
               </button>
               <button class="card-view-button card-view-button-slides" type="button">
-                <svg class="card-view-button-icon" aria-hidden="true" focusable="false" width="16" height="14"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
-                </svg>
                 <span class="visually-hidden">Показать слайды</span>
               </button>
               <button class="card-view-button card-view-button-list" type="button">
-                <svg class="card-view-button-icon" aria-hidden="true" focusable="false" width="16" height="14"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
-                </svg>
                 <span class="visually-hidden">Показать список</span>
               </button>
             </div>
@@ -290,7 +311,7 @@
           <h2 class="visually-hidden">Социаные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="footer-social-item-vk" href="#">
+              <a class="footer-social-link" href="#">
                 <svg class="footer-icon" aria-hidden="true" focusable="false" width="25" height="15"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd"
@@ -301,7 +322,7 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-item-telegram" href="#">
+              <a class="footer-social-link" href="#">
                 <svg class="footer-icon" aria-hidden="true" focusable="false" width="18" height="16"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -311,7 +332,7 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-item-youtube" href="#">
+              <a class="footer-social-link" href="#">
                 <svg class="footer-icon" aria-hidden="true" focusable="false" width="23" height="18"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
