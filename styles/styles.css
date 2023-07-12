@@ -141,6 +141,7 @@ main {
   color: #000000;
 }
 
+
 .site-navigation-item-active::after {
   position: absolute;
   content: "";
@@ -289,9 +290,7 @@ main {
 }
 
 .advantages > p {
-  width: 651px;
   margin: 0 auto;
-  margin-bottom: 21px;
   padding: 0 70px 69px;
   text-align: center;
   font-size: 22px;
@@ -302,6 +301,7 @@ main {
 .advantages-list {
   margin: 0;
   padding: 0;
+  padding-top: 21px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -387,10 +387,8 @@ main {
 }
 
 .services-container h2 {
-  width: 505px;
   margin: 0 auto;
-  padding-top: 64px;
-  padding-bottom: 20px;
+  padding: 64px 70px 20px;
   text-align: center;
   font-weight: 700;
   font-size: 30px;
@@ -400,9 +398,8 @@ main {
 }
 
 .services-container p {
-  width: 490px;
   margin: 0 auto;
-  padding-bottom: 64px;
+  padding: 0 70px 64px;
   text-align: center;
   font-size: 22px;
   line-height: 26px;
@@ -467,11 +464,10 @@ main {
 }
 
 .description {
-  width: 592px;
-  margin: 0 auto;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  width: 1200px;
+  padding: 96px 304px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .description h2 {
@@ -508,11 +504,8 @@ main {
 }
 
 .newsletter-container {
-  width: 684px;
   margin: 0 auto;
-  padding-top: 96px;
-  padding-bottom: 104px;
-
+  padding: 96px 70px 104px;
 }
 
 .newsletter h2 {
@@ -539,6 +532,7 @@ main {
   grid-template-columns: 452px 232px;
   height: 52px;
   box-sizing: border-box;
+  justify-content: center;
 }
 
 .field {
@@ -1050,6 +1044,10 @@ footer {
   display: none;
 }
 
+.modal-container-open {
+  display: block;
+}
+
 .filter-products {
   display: block;
   color: #FFFFFF;
@@ -1059,7 +1057,6 @@ footer {
   background-color: #000000;
   min-height: 412px;
   margin: 0;
-  margin-bottom: 50px;
 }
 
 .inner-header {
@@ -1160,7 +1157,7 @@ footer {
 }
 
 .filter-group-infrastructure {
-  margin-right: 70px;
+  margin-right: 69px;
 }
 
 .filter-group-housing {
@@ -1171,7 +1168,7 @@ footer {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  width: 150px;
+  width: 151px;
   padding: 0;
   padding-bottom: 32px;
 }
@@ -1403,6 +1400,10 @@ footer {
   background-color: rgba(28, 28, 28, 0);
 }
 
+.catalog-products {
+  padding-top: 50px;
+}
+
 .catalog-products-header {
   display: flex;
   width: 1060px;
@@ -1535,7 +1536,7 @@ footer {
 .product-card {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: 1fr auto;
   gap: 16px 20px;
   padding: 19px;
   box-sizing: border-box;
